@@ -1,6 +1,9 @@
 package it.maiku;
 
+import org.joda.time.DateTime;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -32,6 +35,16 @@ public class myListUtilTest {
         order = inpOrder;
         data = inpData;
     }
+
+    @Before
+    public void stampaBef(){
+        System.out.println("inizio case: " + new DateTime().toString());
+    }
+    @After
+    public void stampaAft(){
+        System.out.println("fine case: " + new DateTime().toString());
+    }
+
 
     @Test
     public void completeTest()
