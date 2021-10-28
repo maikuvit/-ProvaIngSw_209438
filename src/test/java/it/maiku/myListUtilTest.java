@@ -42,7 +42,7 @@ public class myListUtilTest {
     }
     @After
     public void stampaAft(){
-        System.out.println("fine case: " + new DateTime().toString());
+        System.out.println("--fine case: " + new DateTime().toString());
     }
 
 
@@ -55,6 +55,6 @@ public class myListUtilTest {
         else Collections.sort(ordData,Collections.reverseOrder());
 
         //check sul testcase ...
-        Assert.assertTrue(myListUtil.sort(data,order).equals(ordData));
+        Assert.assertEquals(myListUtil.sort(data,order),ordData);
     }
 }
