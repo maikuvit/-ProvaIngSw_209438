@@ -6,7 +6,8 @@ public class myListUtil {
     public static ArrayList<Integer> sort (ArrayList<Integer> list, int order){
         ArrayList<Integer> support = new ArrayList<Integer>();
         if(order == 0){
-            //scorro tutto l'array ...
+            //scorro tutto l'array ..
+
             while(!list.isEmpty()){
                 //cerco il min ogni volta ...
                 int minIndex = 0;
